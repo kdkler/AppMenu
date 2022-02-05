@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="AppMenu.PageView.PageDiscovery"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMenu.PageView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <TabView>
+        <TabView.TabItems>
+            <TabViewItem Header="疫情" IsClosable="False">
+                <TabViewItem.IconSource>
+                    <BitmapIconSource UriSource="/Assets/TabViewIcons/cmd.png" ShowAsMonochrome="False" />
+                </TabViewItem.IconSource>
+            </TabViewItem>
+            <TabViewItem Header="奥运会" IsClosable="False">
+                <TabViewItem.IconSource>
+                    <BitmapIconSource UriSource="/Assets/TabViewIcons/powershell.png" ShowAsMonochrome="False" />
+                </TabViewItem.IconSource>
+            </TabViewItem>
+            <TabViewItem Header="生活" IsClosable="False">
+                <TabViewItem.IconSource>
+                    <BitmapIconSource UriSource="/Assets/TabViewIcons/linux.png" ShowAsMonochrome="False" />
+                </TabViewItem.IconSource>
+            </TabViewItem>
+        </TabView.TabItems>
+    </TabView>
+</Page>

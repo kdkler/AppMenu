@@ -1,0 +1,135 @@
+﻿<Window
+    x:Class="AppMenu.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMenu"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <!--<StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                -->
+            <!--<AppBarButton x:Name="home" Icon="Home"  Label="主页" Click="home_Click"/>
+                <AppBarButton x:Name="app" Icon="AllApps" Label="应用" Click="app_Click"/>
+                <AppBarButton x:Name="game" Icon="Play" Label="游戏" Click="game_Click"/>-->
+            <!--
+                <AppBarToggleButton x:Name="home" Label="主页" Background="LightCoral"  Icon="home" Click="home_Click"></AppBarToggleButton>
+                <AppBarToggleButton x:Name="app" Label="应用"  Icon="AllApps" Click="app_Click"></AppBarToggleButton>
+                <AppBarToggleButton x:Name="game" Label="游戏" Icon="Play" Click="game_Click"></AppBarToggleButton>
+            </StackPanel>
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                
+                
+                <AppBarSeparator/>
+                <AppBarToggleButton x:Name="help" Label="帮助"  Icon="Help" Click="help_Click"></AppBarToggleButton>
+                <AppBarToggleButton x:Name="setting" Label="设置"  Icon="Setting" Click="setting_Click"></AppBarToggleButton>
+            </StackPanel>-->
+
+
+            <ListView x:Name="menuListView" SelectionMode="Single" SelectionChanged="menuListView_SelectionChanged">
+                <ListViewItem x:Name="discovery1" Tag="discovery" Padding="10" Tapped="menuListView_Tapped">
+                    <StackPanel  Tag="discovery2" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center"  >
+                        <FontIcon Tag="discovery3" FontFamily="Segoe Fluent Icons" Glyph="&#xe774;" Foreground="#C72335"/>
+                        <TextBlock Tag="discovery4"  FontSize="12">发现</TextBlock>
+                        <!--<Grid>
+                            <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xEB51;" Foreground="#C72335" />
+                        </Grid>-->
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="tag" Tag="tag" Padding="10" Tapped="menuListView_Tapped">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xea37;"/>
+                        <TextBlock Tag="tbtag" FontSize="12">标签</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="mine" Tag="mine" Padding="10" Tapped="menuListView_Tapped">
+                    <StackPanel Tag="tbmine1" DataContext="tbmine1" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <FontIcon Tag="tbmine2" DataContext="tbmine2" FontFamily="Segoe Fluent Icons" Glyph="&#xe77b;"/>
+                        <TextBlock Tag="tbmine3" DataContext="tbmine3" FontSize="12">我的</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <ListViewItem x:Name="setting" Tag="setting" Padding="10" Tapped="menuListView_Tapped">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe713;"/>
+                        <!--<FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xeccd;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf156;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf164;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf166;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf32a;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf56e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf57e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe708;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe71d;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe737;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe73a;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe74c;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe74e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe753;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe773;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe81e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe823;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe838;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe840;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe85f;"/>-->
+                        <TextBlock Tag="tbsetting" FontSize="12">设置</TextBlock>
+                    </StackPanel>
+                </ListViewItem>
+                <!--<ListViewItem x:Name="help" Tag="help" Padding="10" Tapped="menuListView_Tapped">
+                    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe897;"/>
+                        --><!--<FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xeccd;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf156;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf164;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf166;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf32a;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf56e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xf57e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe708;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe71d;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe737;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe73a;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe74c;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe74e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe753;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe773;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe81e;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe823;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe838;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe840;"/>
+                        <FontIcon FontFamily="Segoe Fluent Icons" Glyph="&#xe85f;"/>--><!--
+                        <TextBlock Tag="tbhelp" FontSize="12">关于</TextBlock>
+                    </StackPanel>
+                </ListViewItem>-->
+            </ListView>
+
+            <!--<ListBox x:Name="listBox1" SelectionChanged="listBox1_SelectionChanged">
+                <ListBoxItem>
+                    <StackPanel Tag="tbmine1" DataContext="tbmine1" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <FontIcon Tag="tbmine2" DataContext="tbmine2" FontFamily="Segoe Fluent Icons" Glyph="&#xe77b;"/>
+                        <TextBlock Tag="tbmine3" DataContext="tbmine3" FontSize="12">我的</TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+                <ListBoxItem>
+                    <StackPanel Tag="tbmine1" DataContext="tbmine1" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <FontIcon Tag="tbmine2" DataContext="tbmine2" FontFamily="Segoe Fluent Icons" Glyph="&#xe77b;"/>
+                        <TextBlock Tag="tbmine3" DataContext="tbmine3" FontSize="12">我的</TextBlock>
+                    </StackPanel>
+                </ListBoxItem>
+            </ListBox>-->
+
+
+
+        </StackPanel>
+        <Border BorderThickness="1" BorderBrush="#33333333" Background="#FFFFFFFF" CornerRadius="10">
+            <Frame x:Name="contentFrame"  VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+
+            </Frame>
+        </Border>
+        
+        
+    </StackPanel>
+
+
+</Window>

@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="AppMenu.PageView.PageSetting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMenu.PageView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnAbout" Click="btnAbout_Click">关于我们</Button>
+        <ContentDialog
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Name="dialog1"
+        Title="提示信息:" Width="240"
+        PrimaryButtonText="确定"
+        CloseButtonText="关闭"
+        DefaultButton="Primary">
+
+            <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <TextBlock Text="本应于是北京自定义科技有限公司开发的一套使用winui3框架的我的时间线windows版本，和我的时间线的android版本，快应用版本即可实现一端保存，多端同步。感谢您的使用！" 
+            TextWrapping="Wrap" />
+            </StackPanel>
+
+        </ContentDialog>
+    </Grid>
+</Page>

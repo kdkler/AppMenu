@@ -1,0 +1,16 @@
+﻿<Window
+    x:Class="AppMenu.PageView.ContentDialogContent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppMenu.PageView"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        
+        <!-- Content body -->
+        <TextBlock Text="本应于是北京自定义科技有限公司开发的一套使用winui3框架的我的时间线windows版本,和我的时间线的android版本,快应用版本即可实现一端保存,多端同步.欢迎使用." TextWrapping="Wrap" />
+        <CheckBox Content="点赞小心心"/>
+    </StackPanel>
+</Window>
